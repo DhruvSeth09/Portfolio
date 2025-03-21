@@ -129,7 +129,7 @@ const LeftBanner = () => {
     >
       {/* 3D Background Layer */}
       <div
-        className="absolute inset-0 bg-gradient-to-r from-bodyColor to-[#202327] opacity-50 transform-gpu rotate-x-6 rotate-y-6 scale-105"
+        className="absolute inset-0 bg-gradient-to-r from-bodyColor opacity-50 transform-gpu rotate-x-6 rotate-y-6 scale-105"
         style={{
           transform: "perspective(1000px) rotateX(6deg) rotateY(6deg)",
         }}
@@ -191,7 +191,7 @@ const LeftBanner = () => {
         className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between relative z-10"
       >
         {/* Social Links */}
-        <div>
+        <div className="mb-4 ml-2">
           <h2 className="text-base uppercase font-titleFont mb-4 text-gray-400">
             Find me on
           </h2>
@@ -230,7 +230,7 @@ const LeftBanner = () => {
         </div>
 
         {/* Skills */}
-        <div>
+        <div className="mb-4 mr-2">
           <h2 className="text-base uppercase font-titleFont mb-4 text-gray-400">
             BEST SKILLS
           </h2>
