@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { Link } from "react-scroll";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
-import { FaInstagram, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import {logo} from "../../assets/index"
 import { navLinksdata } from '../../constants';
 
@@ -11,7 +10,9 @@ const Navbar = () => {
   return (
     <div className="w-full h-24 sticky top-0 z-50 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600">
       <div>
+        <a href='/'>
         <img src={logo} alt="logo" className=" w-16 rounded-full" />
+        </a>
       </div>
       <div>
         <ul className="hidden mdl:inline-flex items-center gap-6 lg:gap-10">
@@ -40,15 +41,9 @@ const Navbar = () => {
           <FiMenu />
         </span>
         {showMenu && (
-          <div className="w-[80%] h-screen overflow-scroll absolute top-0 left-0 bg-gray-900 p-4 scrollbar-hide">
+          <div className="w-[50%]  overflow-scroll absolute top-6 right-0 bg-gray-900 p-4 scrollbar-hide">
             <div className="flex flex-col gap-8 py-2 relative">
               <div>
-              <img className="w-32 rounded-full" src={logo} alt="logo" />
-
-                <p className="text-sm text-gray-400 mt-2">
-                I am a full-stack developer proficient in JavaScript, React.js, Node.js, Express.js, and MongoDB, with a strong foundation in data structures,
-         algorithms, and software development. Passionate about building responsive and scalable web applications.
-                </p>
               </div>
               <ul className="flex flex-col gap-4">
                 {navLinksdata.map((item) => (
@@ -70,22 +65,6 @@ const Navbar = () => {
                   </li>
                 ))}
               </ul>
-              <div className="flex flex-col gap-4">
-                <h2 className="text-base uppercase font-titleFont mb-4">
-                  Find me on
-                </h2>
-                <div className="flex gap-4">
-                    <a className="bannerIcon" href="https://www.instagram.com/hariom_sharma210/">
-                      <FaInstagram />
-                    </a>
-                    <a className="bannerIcon" href="https://github.com/Hariom-sharma01">
-                      <FaGithub />
-                    </a>
-                    <a className="bannerIcon" href="https://www.linkedin.com/in/hariom-sharma-7a3681250/">
-                      <FaLinkedinIn />
-                    </a> 
-                </div>
-              </div>
               <span
                 onClick={() => setShowMenu(false)}
                 className="absolute top-4 right-4 text-gray-400 hover:text-designColor duration-300 text-2xl cursor-pointer"

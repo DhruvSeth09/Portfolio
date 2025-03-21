@@ -20,19 +20,19 @@ const Education = () => {
           <ResumeCard
             title="B-Tech Computer Science and Engineering"
             subTitle="GLA University (2022 - 2026)"
-            result="8.58/10"
+            result="8.64/10"
             des="I am currently pursuing my bachelor's degree in computer science from GLA University, Mathura."
           />
           <ResumeCard
             title="Senior Secondary School Education"
-            subTitle="St. Andrews School ,Agra (2019 - 2021)"
-            result="9.2/10"
+            subTitle="S.S.K.L.A Mem Bal Vidya Mandir ,Jalaun (2021 - 2022)"
+            result="8.19/10"
             des="I have completed my secondary education from this school with a remarkable academic record."
           />
           <ResumeCard
             title="High School Education"
-            subTitle="St. Andrews School ,Agra (2018 - 2019)"
-            result="9/10"
+            subTitle="S.S.K.L.A Mem Bal Vidya Mandir ,Jalaun (2019 - 2020)"
+            result="7.1/10"
             des="I have completed my High School Education from this school with a remarkable academic record."
           />
         </div>

@@ -49,7 +49,7 @@ const Contact = () => {
     const form = e.target;
     const formData = new FormData(form);
 
-    fetch("https://formspree.io/f/xovjyloa", {
+    fetch("https://formspree.io/f/mvgkokpo", {
       method: "POST",
       body: formData,
       headers: {
