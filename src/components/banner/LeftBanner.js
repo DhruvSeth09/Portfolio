@@ -191,7 +191,7 @@ const LeftBanner = () => {
         className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between relative z-10"
       >
         {/* Social Links */}
-        <div className="mb-4 ml-2">
+        <div className="mb-4 ml-2 ">
           <h2 className="text-base uppercase font-titleFont mb-4 text-gray-400">
             Find me on
           </h2>
